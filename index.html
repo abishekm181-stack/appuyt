@@ -164,7 +164,9 @@ body {
   <div class="submenu" id="productsSub">
 
     <!-- LED -->
-    <div onclick="toggleSub('ledSub')">LED Light ▼</div>
+<div onclick="toggleSub('ledSub'); this.querySelector('.arrow').innerHTML = this.querySelector('.arrow').innerHTML == '▼' ? '▲' : '▼'">
+    LED Lights <span class="arrow">▼</span>
+</div>
     <div class="submenu-inner" id="ledSub">
       <div onclick="showSection('section8')">table stand light</div>
       <div onclick="showSection('section7')">Wall Light</div>
